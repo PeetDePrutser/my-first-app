@@ -1,0 +1,70 @@
+{
+    "inspections": [
+        {
+            "damage": {
+                "location": "",
+                "new_damage": false,
+                "damage_type": "moedwillig",
+                "date": "2026-01-01",
+                "immediate_action": false,
+                "description": ""
+            },
+            "maintenance": {
+                "location": "",
+                "maintenance_type": "houtrot",
+                "immediate_action": false,
+                "cost_indication": "1"
+            },
+            "inspection": {
+                "location": "",
+                "installation_type": "koeling",
+                "reported_failures": "",
+                "test_procedure": "http://",
+                "accepted": false,
+                "description": ""
+            },
+            "modifications": {
+                "current_situation": "http://",
+                "location": "",
+                "executed_by": "me",
+                "description_modification": "",
+                "action": "1",
+                "description": ""
+            }
+
+        },
+        {
+            "damage": {
+                "location": "",
+                "new_damage": false,
+                "damage_type": "moedwillig",
+                "date": "2026-01-01",
+                "immediate_action": false,
+                "description": ""
+            },
+            "maintenance": {
+                "location": "",
+                "maintenance_type": "houtrot",
+                "immediate_action": false,
+                "cost_indication": "1"
+            },
+            "inspection": {
+                "location": "",
+                "installation_type": "koeling",
+                "reported_failures": "",
+                "test_procedure": "http://",
+                "accepted": false,
+                "description": ""
+            },
+            "modifications": {
+                "current_situation": "http://",
+                "location": "",
+                "executed_by": "me",
+                "description_modification": "",
+                "action": "1",
+                "description": ""
+            }
+
+        }
+    ]
+}
