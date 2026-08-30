@@ -1,6 +1,9 @@
 {
     "inspections": [
         {
+            "id": 1,
+            "datum": "2026-01-01",
+            "state": "done",
             "damage": {
                 "location": "",
                 "new_damage": false,
@@ -24,37 +27,39 @@
                 "description": ""
             },
             "modifications": {
-                "current_situation": "http://",
+                "current_situation": "",
                 "location": "",
-                "executed_by": "me",
+                "executed_by": "",
                 "description_modification": "",
                 "action": "1",
                 "description": ""
             }
-
         },
         {
+            "id": 2,
+            "datum": "2026-02-01",
+            "state": "done",
             "damage": {
                 "location": "",
                 "new_damage": false,
-                "damage_type": "moedwillig",
-                "date": "2026-01-01",
+                "damage_type": "",
+                "date": "",
                 "immediate_action": false,
                 "description": ""
             },
             "maintenance": {
                 "location": "",
-                "maintenance_type": "houtrot",
+                "maintenance_type": "",
                 "immediate_action": false,
                 "cost_indication": "1"
             },
             "inspection": {
-                "location": "",
+                "location": "In de stookruimte",
                 "installation_type": "koeling",
-                "reported_failures": "",
+                "reported_failures": "Koelt niet meer",
                 "test_procedure": "http://",
-                "accepted": false,
-                "description": ""
+                "accepted": true,
+                "description": "Nieuwe thermostaat nodig"
             },
             "modifications": {
                 "current_situation": "http://",
