@@ -1,5 +1,7 @@
 // https://search.brave.com/search?q=vue+javascript+service+example+site%3Astackoverflow.com&source=sim-pages&conversation=09815d2a8e02925ab0e7dc049db11f71e1f1
 
+import { Inspection } from "../models/inspection";
+
 const baseUrl = "http://localhost:3000/";
 
 
@@ -16,7 +18,9 @@ const ApiService = {
                 }
             });
             const data = await response.json();
-            return data.filter(inspection => inspection.state === 'done');
+            return data
+            .filter(inspection => inspection.state === 'done')
+            .map(inspection => new Inspection(inspection));
         } catch (error) {
             return console.log('Looks like there was a problem: \n', error);
         }

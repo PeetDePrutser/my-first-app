@@ -2,7 +2,7 @@
     "inspections": [
         {
             "id": 1,
-            "datum": "2026-01-01",
+            "date": "2026-01-01",
             "state": "done",
             "damage": {
                 "location": "",
@@ -27,8 +27,8 @@
                 "description": ""
             },
             "modifications": {
-                "current_situation": "",
                 "location": "",
+                "current_situation": "",
                 "executed_by": "",
                 "description_modification": "",
                 "action": "1",
@@ -37,7 +37,7 @@
         },
         {
             "id": 2,
-            "datum": "2026-02-01",
+            "date": "2026-02-01",
             "state": "done",
             "damage": {
                 "location": "",
@@ -62,8 +62,8 @@
                 "description": "Nieuwe thermostaat nodig"
             },
             "modifications": {
-                "current_situation": "http://",
                 "location": "",
+                "current_situation": "http://",
                 "executed_by": "me",
                 "description_modification": "",
                 "action": "1",

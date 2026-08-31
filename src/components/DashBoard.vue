@@ -1,19 +1,18 @@
 <script setup lang="js">
-  import { ref } from 'vue';
-import ApiService from '../services/api.service';
+    import { ref } from 'vue';
+    import ApiService from '../services/api.service';
+    import Inspections from './Inspections.vue';
 
-  let inspections = ref([]);
-  ApiService.getAllDoneInspections()
-  .then(data => inspections = data);
+    let inspections = ref([]);
+    ApiService.getAllDoneInspections()
+        .then(data => inspections.value = data);
 
 </script>
 
 <template>
   <section id="center">
-    <li v-for="inspection in inspections">
-      {{ inspection.id }}
-    </li>    
-    </section>
+    <Inspections :inspections=inspections state="done" />
+  </section>
     <v-container>
         <v-row class="ga-3">
             <v-col class="w-50">
