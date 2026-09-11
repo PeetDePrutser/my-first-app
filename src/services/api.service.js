@@ -1,23 +1,15 @@
 // https://search.brave.com/search?q=vue+javascript+service+example+site%3Astackoverflow.com&source=sim-pages&conversation=09815d2a8e02925ab0e7dc049db11f71e1f1
 
+import axios from "axios";
 import { Inspection } from "../models/inspection";
-
-const baseUrl = "http://localhost:3000/";
-
 
 const ApiService = {
 
     getAllInspections: async (state) => {
-        const url = baseUrl+'inspections';
-        // console.log(url);
+        const url = "/inspections.json";
         try {
-            const response = await fetch(url, {
-                method: 'GET',
-                headers: {
-                    'Content-type': 'application/json'
-                }
-            });
-            const data = await response.json();
+            const response = await axios.get(url);
+            const data = await response.data.inspections;
             return data
             .filter(inspection => inspection.state === state.value)
             .map(inspection => new Inspection(inspection));

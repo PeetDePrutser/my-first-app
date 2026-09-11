@@ -1,24 +1,25 @@
+import App from './App.vue'
+import router from './routes'
 import { createApp } from 'vue'
-import './styles/main.css'
-// Hier nog de huis style CSS importeren
-
-// import this after install `@mdi/font` package
-import '@mdi/font/css/materialdesignicons.css'
-
-import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
+
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
+
+import './styles/main.css'
+import '@mdi/font/css/materialdesignicons.css'
+import 'vuetify/styles'
+import { createPinia } from 'pinia'
+
+const pinia = createPinia();
 
 const vuetify = createVuetify({
     components,
     directives
-})
-
-import App from './App.vue'
-import router from './routes'
+});
 
 createApp(App)
-.use(vuetify)
+.use(pinia)
 .use(router)
+.use(vuetify)
 .mount('#app')

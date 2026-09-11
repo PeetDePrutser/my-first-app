@@ -1,3 +1,5 @@
 https://github.com/NZweers/CaseRealEstateCare/tree/Oefening-3
 
 component bouwen: https://www.youtube.com/watch?v=J7_EjeNhazg
+
+Pinia uitzoeken hoe store werkt met ophalen data.
