@@ -70,6 +70,42 @@
                 "description": ""
             }
 
+        },
+        {
+            "id": 3,
+            "date": "2026-03-01",
+            "state": "open",
+            "damage": {
+                "location": "",
+                "new_damage": false,
+                "damage_type": "",
+                "date": "",
+                "immediate_action": false,
+                "description": ""
+            },
+            "maintenance": {
+                "location": "",
+                "maintenance_type": "",
+                "immediate_action": false,
+                "cost_indication": "1"
+            },
+            "inspection": {
+                "location": "In de stookruimte",
+                "installation_type": "koeling",
+                "reported_failures": "Koelt niet meer",
+                "test_procedure": "http://",
+                "accepted": true,
+                "description": "Nieuwe thermostaat nodig"
+            },
+            "modifications": {
+                "location": "",
+                "current_situation": "http://",
+                "executed_by": "me",
+                "description_modification": "",
+                "action": "1",
+                "description": ""
+            }
+
         }
     ]
 }

@@ -1,5 +1,4 @@
 <script setup>
-import Dashboard from './components/DashBoard.vue'
 import AppBar from './components/AppBar.vue'
 import Footer from './components/Footer.vue'
 </script>
@@ -8,7 +7,7 @@ import Footer from './components/Footer.vue'
   <v-app>
       <AppBar />
       <v-main>
-        <Dashboard />
+        <router-view />
       </v-main>
       <Footer />
   </v-app>

@@ -7,7 +7,7 @@ const baseUrl = "http://localhost:3000/";
 
 const ApiService = {
 
-    getAllDoneInspections: async () => {
+    getAllInspections: async (state) => {
         const url = baseUrl+'inspections';
         // console.log(url);
         try {
@@ -19,7 +19,7 @@ const ApiService = {
             });
             const data = await response.json();
             return data
-            .filter(inspection => inspection.state === 'done')
+            .filter(inspection => inspection.state === state.value)
             .map(inspection => new Inspection(inspection));
         } catch (error) {
             return console.log('Looks like there was a problem: \n', error);

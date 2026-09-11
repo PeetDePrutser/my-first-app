@@ -1,10 +1,20 @@
 <script setup lang="js">
-import { Inspection } from '../models/inspection';
+import { ref, onMounted } from 'vue';
+import ApiService from '../services/api.service';
+import { useRoute } from 'vue-router'
 
-const props = defineProps({
-        inspections: Array,
-        state: String
-    });
+const route = useRoute()
+let state = ref("");
+let inspections = ref([]);
+
+// console.log("state1: "+$router.params.state);
+
+onMounted(() => {
+    state.value = route.params.state;
+    ApiService.getAllInspections(state)
+        .then(data => inspections.value = data);
+});
+
 
 </script>
 <template>
