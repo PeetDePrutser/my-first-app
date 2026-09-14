@@ -1,0 +1,16 @@
+import { defineStore } from "pinia";
+
+export const loginStore = defineStore('login', {
+    state: () => ({
+        username: "",
+        userKey: "",
+        loggedIn: true,
+        authenticated: true
+    }),
+    getters: {
+
+    },
+    actions: {
+        
+    }
+});

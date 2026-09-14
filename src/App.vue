@@ -1,6 +1,12 @@
-<script setup>
+<script setup lang="js">
 import AppBar from './components/AppBar.vue'
 import Footer from './components/Footer.vue'
+import { useRouter } from 'vue-router'
+import { loginStore } from './stores/LoginStore.js';
+
+if (!loginStore().authenticated) {
+  useRouter().replace({name: "login"})
+}
 </script>
 
 <template>
