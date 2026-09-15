@@ -18,13 +18,13 @@
                 </template></v-card>
             </v-col>
             <v-col class="w-50">
-                <v-card><template v-slot:text>
+                <v-card to="/knowledge"><template v-slot:text>
                     <v-icon size="128">mdi-apps</v-icon>
                     <p>Knowledge base</p>
                 </template></v-card>
             </v-col>
             <v-col class="w-50">
-                <v-card><template v-slot:text>
+                <v-card to="/settings"><template v-slot:text>
                     <v-icon size="128">mdi-cog</v-icon>
                     <p>Settings</p>
                 </template></v-card>

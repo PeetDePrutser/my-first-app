@@ -1,13 +1,14 @@
 import { defineStore } from "pinia";
 import { Inspection } from "../models/inspection";
 import axios from "axios";
+import { ref } from "vue";
 
 const url = "/inspections.json";
 
 export const inspectionsStore = defineStore('inspections', {
     state: () => {
         return {
-            inspections: []
+            inspections: ref([])
         }
     },
     actions: {

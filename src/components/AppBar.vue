@@ -1,5 +1,5 @@
-<script setup>
-    import logo from '../assets/real_estate_logo_white.png'
+<<script setup lang="js">
+   import logo from '../assets/real_estate_logo_white.png'
 </script>
 <template>
     <v-app-bar class="top_bar"> 

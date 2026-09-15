@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import DashBoard from "../components/DashBoard.vue";
 import Inspections from "../components/Inspections.vue";
 import Login from "../components/Login.vue";
+import Knowledge from "../components/Knowledge.vue";
+import Settings from "../components/Settings.vue";
 
 const routes = [
     {
@@ -18,6 +20,16 @@ const routes = [
         name: 'inspections',
         path: '/inspections/:state',
         component: Inspections
+    },
+    {
+        name: 'knowledge',
+        path: '/knowledge',
+        component: Knowledge
+    },
+    {
+        name: 'settings',
+        path: '/settings',
+        component: Settings
     }
 ];
 
