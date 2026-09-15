@@ -4,7 +4,7 @@ import Footer from './components/Footer.vue'
 import { useRouter } from 'vue-router'
 import { loginStore } from './stores/LoginStore.js';
 
-if (!loginStore().authenticated) {
+if (!loginStore().isAuthenticated) {
   useRouter().replace({name: "login"})
 }
 </script>
